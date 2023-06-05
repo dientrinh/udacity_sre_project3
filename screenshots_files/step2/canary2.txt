@@ -1,0 +1,25 @@
+DienTrinh@DESKTOP-Q8OO1ID MINGW64 /d/SRE/Project 3 - Self-Healing Arch/Refer_uda_code/git_source_code/starter/apps/canary (feature/step3)
+$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                          READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-72qhq                1/1     Running   0          129m
+kube-system   aws-node-jqvnx                1/1     Running   0          127m
+kube-system   coredns-8fd4db68f-6dr68       1/1     Running   0          129m
+kube-system   coredns-8fd4db68f-cq5cc       1/1     Running   0          129m
+kube-system   kube-proxy-pbtxn              1/1     Running   0          127m
+kube-system   kube-proxy-v8kxv              1/1     Running   0          129m
+udacity       blue-756d6cc6c9-hvhgp         1/1     Running   0          129m
+udacity       blue-756d6cc6c9-kmr6t         1/1     Running   0          127m
+udacity       blue-756d6cc6c9-rfzkb         1/1     Running   0          129m
+udacity       canary-v1-5484598db-5xlx9     1/1     Running   0          109m
+udacity       canary-v2-6bdbfc4f4b-8bmcx    1/1     Running   0          110m
+udacity       hello-world-bd9cf44f8-52lz2   1/1     Running   0          127m
+
+DienTrinh@DESKTOP-Q8OO1ID MINGW64 /d/SRE/Project 3 - Self-Healing Arch/Refer_uda_code/git_source_code/starter/apps/canary (feature/step3)
+$ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+blue-756d6cc6c9-hvhgp         1/1     Running   0          129m
+blue-756d6cc6c9-kmr6t         1/1     Running   0          127m
+blue-756d6cc6c9-rfzkb         1/1     Running   0          129m
+canary-v1-5484598db-5xlx9     1/1     Running   0          109m
+canary-v2-6bdbfc4f4b-8bmcx    1/1     Running   0          111m
+hello-world-bd9cf44f8-52lz2   1/1     Running   0          127m
